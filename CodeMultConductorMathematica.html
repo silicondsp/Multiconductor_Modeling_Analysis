@@ -1,23 +1,115 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html><!-- InstanceBegin template="/Templates/radiocalc_general.dwt" codeOutsideHTMLIsLocked="false" -->
+<!-- DW6 -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Multiconductor Modeling and Analysis</title>
+<!-- InstanceEndEditable -->
 
-<title>The Title Untitled Document</title>
+ <link rel="stylesheet" href="../simple.css" type="text/css"> 
+   <!--<link rel="stylesheet" href="emx_nav_left.css" type="text/css"> -->
 
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 7;
 
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+  this.numberofmenuitems = 7;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.visibility = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+    var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+  }
+  theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+      shutdiv.style.visibility='hidden';
+    }
+  }
+}
+// -->
+</script>
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+	background-image: url(../bg.jpg);
+}
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 200%;
+	font-weight: bold;
+	font-style: italic;
+	color: #000000;
+}
+ 
+-->
+
+ 
+.style2 {
+	font-family: "Times New Roman", Times, serif;
+	 
+	font-size: 100%;
+	 
+	color: #0c5ebf;
+}
+ 
+</style>
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 </head>
  <link rel="stylesheet" href="../emx_nav_left.css" type="text/css">
 
-<body> 
-
+<body onmousemove="closesubnav(event);"> 
+<div class="skipLinks"> <a href="#siteInfo"></a> </div>
+<div id="masthead2"> 
+  <table width="800" border="0">
+    <tbody>
+      <tr>
+        <th width="501" scope="col"><div align="left"><img src="../BannerWork/RadioCalcBanner.png" width="418" height="174" alt=""/></div></th>
+        <th width="818" scope="col"><div align="left"><strong><img src="../BannerWork/AdobeStock_92633058_Tower.jpg" width="39" height="51" alt=""/><img src="../BannerWork/RadioCalCpCOM.jpg" width="419" height="46" alt=""/></strong></div></th>
+      </tr>
+    </tbody>
+  </table>
+  <div id="globalNav">
+    <div id="globalLink"> 
+    
+      <a href="../index.html" id="gl1" class="glink" >Home</a><a href="../RadioPropagation.html" id="gl4" class="glink" >RF Propagation</a><a href="../MultiConductorCAD.html" id="gl2" class="glink" >Multi Conductor CAD</a><a href="http://www.silicondsp.com/Capsim" id="gl4" class="glink" >DSP/Communications</a>
+<a href="../Ray_Tracing_Ionosphere_Project/Ray_Tracing_Ionosphere_Project.html" id="gl5" class="glink" >Ionospheric Propagation</a><a href="../Contact.html" id="gl6" class="glink" >Contact</a> 
+    </div> 
+    <!--end globalLinks--> 
+    <!-- <form id="search" action=""> 
+      <input name="searchFor" type="text" size="10"> 
+      <a href="">search</a> 
+    </form> --> 
+</div> 
+  <!-- end globalNav --> 
+  <div id="subglobal1" class="subglobalNav"><BR>
+ </div>
+  
+<!-- end masthead --> 
 
  
   
-    <h1 >Open Source Mathematica &reg; Code Multiconductor Modeling and Analysis    </h1>
+    <!-- InstanceBeginEditable name="PageName" -->
+    <h1 class="style1">Open Source Mathematica &reg; Code Multiconductor Modeling and Analysis    </h1>
     <p>&nbsp;</p>
-    <table width="1135" border="1">
+    <table width="800" border="1">
       <tbody>
         <tr>
           <th width="47" scope="col"><div align="center">Case</div></th>
@@ -28,7 +120,7 @@
         </tr>
         <tr>
           <td><div align="center">1</div></td>
-          <td>Code for Three Conductors Above Ground Plane Based on Report <a href="Multiconductor_Derivation_Ardalan_Riddle_1988_CCSP.pdf"><img src="pdf.gif" width="22" height="21" alt=""/></a>Analyzing Crosstalk Reduction</td>
+          <td>Code for Three Conductors Above Ground Plane Based on Report <a href="Multiconductor_Derivation_Ardalan_Riddle_1988_CCSP.pdf"><img src="../pdf.gif" width="22" height="21" alt=""/></a>Analyzing Crosstalk Reduction</td>
           <td><a href="Mathematica_NoteBooks/Multconductor_PerUnitLengthParallelAboveGround_Straight_Inductance_Reduction_CrossTalk.nb">Notebook</a></td>
           <td><a href="Mathematica_WEB_Views/Multconductor_PerUnitLengthParallelAboveGround_Straight_Inductance_Reduction_CrossTalk/Multconductor_PerUnitLengthParallelAboveGround_Straight_Inductance_Reduction_CrossTalk.htm">HTML</a></td>
           <td><p><a href="multiconductor_3_above_ground_plane.jpg">Three Simulations Various Loads</a>(Far End)</p>
@@ -36,7 +128,7 @@
         </tr>
         <tr>
           <td><div align="center">2</div></td>
-          <td>Code for Three Conductors Above Ground Plane Based on Report <a href="Multiconductor_Derivation_Ardalan_Riddle_1988_CCSP.pdf"><img src="pdf.gif" width="22" height="21" alt=""/></a> Near End Cross Talk Two Conductors.</td>
+          <td>Code for Three Conductors Above Ground Plane Based on Report <a href="Multiconductor_Derivation_Ardalan_Riddle_1988_CCSP.pdf"><img src="../pdf.gif" width="22" height="21" alt=""/></a> Near End Cross Talk Two Conductors.</td>
           <td><a href="Mathematica_NoteBooks/Multconductor_PerUnitLengthParallelAboveGround_Crosstalk_Two_Conductors.nb">Notebook</a></td>
           <td><a href="Mathematica_WEB_Views/Multconductor_PerUnitLengthParallelAboveGround_Crosstalk_Two_Conductors/Multconductor_PerUnitLengthParallelAboveGround_Crosstalk_Two_Conductors.htm">HTML</a></td>
           <td><a href="Results_Two_Conductor_Crosstalk2.jpg">Crosstalk Two Conductors</a> (Near End)</td>
@@ -50,25 +142,35 @@
         </tr>
       </tbody>
     </table>
-     
-    <h2 align="center" > Case 1</h2>
+    <p><span style="margin-left:1em;">We have also developed Mathematica &reg; code for <a href="CodeMultConductorMathematica_Microstrip.html">Multiconductoir Microstrip</a> Circuits. Click <a href="CodeMultConductorMathematica_Microstrip.html">here</a>.</span></p>
+    <h2 align="center" class="style1"> Case 1</h2>
     <p align="center"><img src="multiconductor_3_above_ground_plane.jpg" width="640" height="478" alt=""/></p>
-    <p align="center"><span >Case 2</span></p>
+    <p align="center"><span class="style1">Case 2</span></p>
     <p align="center"><img src="Results_Two_Conductor_Crosstalk2.jpg" width="956" height="640" alt=""/></p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
+    <!-- InstanceEndEditable -->
+     
+   
+  <!-- InstanceBeginEditable name="Contents" -->
  
-<p>
-<a href="http://www.silicondsp.com"><img src="sd-logo-tm_sm.gif" width="67" height="69" alt=""></a>
-<p>
-<a href="http://www.silicondsp.com">Silicon DSP Corporation </a>
-<p>
-<p>
-<a href="http://www.radiocalc.com">RadioCalc </a>
-<p>
-
-  
- 
-
+  <!-- InstanceEndEditable -->
+  <div id="siteInfo">
+  Credits: Tower AdobeStock 92633058. Banner AdobeStock 108624876
+  <br><a href="http://www.silicondsp.com"><img src="../sd-logo-tm_sm.gif" width="67" height="69" alt=""/>About </a> | <a href="../Contact.html">Contact</a>  | &copy;1995-2017<em>Silicon DSP Corporation</em>, All Rights Reserved</div> 
+</div> 
+<!--end pagecell1--> 
+<br> 
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+    // -->
+    </script> 
 </body>
 <!-- InstanceEnd --></html>
