@@ -49,7 +49,13 @@ The paper also has simulation results that match very closely with experimental 
     <p>&nbsp;</p>
  
 <p>
-<a href="http://www.silicondsp.com"><img src="sd-logo-tm_sm.gif" width="67" height="69" alt=""></a>
+  <h2 class="style1">Reference:</h2>
+    <p style="margin-left:1em;">1- Mike Riddle, Sasan Ardalan, John Suh,<strong> Derivation of Voltage and Current Transfer Functions for Multiconductor Transmission Lines</strong>, Center for Communications ans Signal Processing (CCSP), NC State University, 1988. 
+        <p style="margin-left:1em;"> Also published in the<span style="margin-left:1em;"> <em>IEEE International Conference on Circuits and Systems</em>, 1989</span>. 
+<BR>
+<p style="margin-left:1em;">For CCSP NC State Report see the PDF Report <a href="Multiconductor_Derivation_Ardalan_Riddle_1988_CCSP.pdf"> here</a>.   
+<p>
+ <a href="http://www.silicondsp.com"><img src="sd-logo-tm_sm.gif" width="67" height="69" alt=""></a>
 <p>
 <a href="http://www.silicondsp.com">Silicon DSP Corporation </a>
 <p>
